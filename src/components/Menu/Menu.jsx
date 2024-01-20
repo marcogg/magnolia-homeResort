@@ -1,4 +1,17 @@
+import '@/app.scss'
+import { Link } from 'react-router-dom'
+import App from '../../App'
+
 const Menu = () => {
+
+  // navigation  menu js
+// const openNav = () => {
+//   document.querySelector('myNav').classList.toggle("menu_width");
+//   document
+//       .querySelector(".custom_menu-btn")
+//       .classList.toggle("menu_btn-style");
+
+// }
   return (
     <>
       {/* header menu */}
@@ -8,7 +21,7 @@ const Menu = () => {
             <div className='main_nav_menu'>
               <div className='fk_width'>
                 <div className='custom_menu-btn'>
-                  <button onClick='openNav()'>
+                  <button>
                     <span className='s-1'> </span>
                     <span className='s-2'> </span>
                     <span className='s-3'> </span>
@@ -24,12 +37,11 @@ const Menu = () => {
                   </div>
                 </div>
               </div>
-              <a className='navbar-brand' href='index.html'>
-                <span>
-                  Magnolia
+              <Link to={<App />}>
+                <span className='navbar-brand'>
+                  Magnolia Home Resort
                 </span>
-                <span className='light-300'>Home Resort</span>
-              </a>
+              </Link>
               <div className='user_option'>
                 <a href='#'>
                   login
