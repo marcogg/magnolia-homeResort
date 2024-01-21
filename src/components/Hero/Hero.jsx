@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const Hero = () => {
   return (
     <>
@@ -18,9 +20,9 @@ const Hero = () => {
                         </h1>
                         <p>9 Exclusivas residencias con concepto House Garden. Desde $7.9 MDP</p>
                         <div>
-                          <a href='https://api.whatsapp.com/send?phone=522221209242&text=%C2%A1Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20del%20desarrollo%20de%20Magnolia'>
+                          <Link to='https://api.whatsapp.com/send?phone=522221209242&text=%C2%A1Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20del%20desarrollo%20de%20Magnolia'>
                             Haz una cita
-                          </a>
+                          </Link>
                         </div>
                       </div>
                       <div className='carousel-item'>
@@ -33,20 +35,20 @@ const Hero = () => {
                             Vive cada día como si estuvieras de vacaciones
                           </p>
                           <div>
-                            <a href='https://api.whatsapp.com/send?phone=522221209242&text=%C2%A1Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20del%20desarrollo%20de%20Magnolia'>
+                            <Link to='https://api.whatsapp.com/send?phone=522221209242&text=%C2%A1Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20del%20desarrollo%20de%20Magnolia'>
                               Haz una cita
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
                       <div className='carousel_control-box'>
                         <div className='carousel_btn-container'>
-                          <a className='carousel-control-prev' href='#carouselExampleIndicators' role='button' data-slide='prev'>
+                          <Link className='carousel-control-prev' to='#carouselExampleIndicators' role='button' data-slide='prev'>
                             <span className='sr-only'>Previous</span>
-                          </a>
-                          <a className='carousel-control-next' href='#carouselExampleIndicators' role='button' data-slide='next'>
+                          </Link>
+                          <Link className='carousel-control-next' to='#carouselExampleIndicators' role='button' data-slide='next'>
                             <span className='sr-only'>Next</span>
-                          </a>
+                          </Link>
                         </div>
                         <ol className='carousel-indicators'>
                           <li data-target='#carouselExampleIndicators' data-slide-to={0} className='active li_one'>01</li>
