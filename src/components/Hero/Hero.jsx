@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
@@ -44,10 +44,10 @@ const Hero = () => {
                       <div className='carousel_control-box'>
                         <div className='carousel_btn-container'>
                           <Link className='carousel-control-prev' to='#carouselExampleIndicators' role='button' data-slide='prev'>
-                            <span className='sr-only'>Previous</span>
+                            <span className='sr-only'></span>
                           </Link>
                           <Link className='carousel-control-next' to='#carouselExampleIndicators' role='button' data-slide='next'>
-                            <span className='sr-only'>Next</span>
+                            <span className='sr-only'></span>
                           </Link>
                         </div>
                         <ol className='carousel-indicators'>
@@ -61,11 +61,11 @@ const Hero = () => {
                 </div>
                 {/* End Bootstrap Carousel */}
               </div>
-              <div className="col-lg-8 px-0">
-  <div className="img-box">
-    <img src="/hero_magnolia.jpg" alt="Hero Magnolia" className="img-fluid"/>
-  </div>
-</div>
+              <div className='col-lg-8 px-0'>
+                <div className='img-box'>
+                  <img src='/hero_magnolia.jpg' value='Hero Magnolia' className='img-fluid clip-mask' />
+                </div>
+              </div>
 
             </div>
           </div>

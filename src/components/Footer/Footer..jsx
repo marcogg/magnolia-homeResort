@@ -1,11 +1,10 @@
 const Footer = () => {
-
   // display current year on footer
-const getCurrentYear = () => {
-  var currentDate = new Date();
-  var currentYear = currentDate.getFullYear();
-  document.querySelector("#displayYear").innerHTML = currentYear;
-}
+  const getCurrentYear = () => {
+    const currentDate = new Date()
+    const currentYear = currentDate.getFullYear()
+    document.querySelector('#displayYear').innerHTML = currentYear
+  }
   return (
     <>
       <div>
@@ -103,7 +102,7 @@ const getCurrentYear = () => {
         <footer className='footer_section '>
           <div className='container'>
             <p>
-            {getCurrentYear()}
+              {getCurrentYear()}
               © <span id='displayYear' /> Todos los derechos reservados
             </p>
           </div>
