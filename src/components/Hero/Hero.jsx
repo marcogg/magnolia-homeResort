@@ -44,10 +44,10 @@ const Hero = () => {
                       <div className='carousel_control-box'>
                         <div className='carousel_btn-container'>
                           <Link className='carousel-control-prev' to='#carouselExampleIndicators' role='button' data-slide='prev'>
-                            <span className='sr-only'></span>
+                            <span className='sr-only' />
                           </Link>
                           <Link className='carousel-control-next' to='#carouselExampleIndicators' role='button' data-slide='next'>
-                            <span className='sr-only'></span>
+                            <span className='sr-only' />
                           </Link>
                         </div>
                         <ol className='carousel-indicators'>

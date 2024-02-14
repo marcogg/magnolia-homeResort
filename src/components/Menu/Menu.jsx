@@ -27,7 +27,7 @@ const Menu = () => {
                 </div>
                 <div id='myNav' className={`overlay ${isMenuActive ? 'menu_width' : ''}`}>
                   <div className='overlay-content'>
-                    <Link to='/'>Inicio <span className='sr-only'>(current)</span></Link>
+                    <Link to='/'>Inicio</Link>
                     <Link to='/desarrollo'>Desarrollo </Link>
                     <Link to='/galeria'>Galería </Link>
                     <Link to='/amenidades'>Amenidades </Link>
