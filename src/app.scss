@@ -15,8 +15,31 @@ $blue: #114352;
   font-family: "Allison", cursive;
   font-weight: 400;
   font-style: normal;
+
+  &.x-4{
+    font-size: 4rem;
+  }
+
+  &.x-6{
+    font-size: 6rem;
+  }
 }
 
+.light-200{
+  font-weight: 200;
+}
+
+.light-300{
+  font-weight: 300;
+}
+
+.text-blue{
+  color: $blue;
+}
+
+.line-height-compact{
+  line-height: 1rem;
+}
 
 @font-face {
   font-family: 'Montserrat', sans-serif;
@@ -672,8 +695,17 @@ a:focus {
 
 .gallery_section {
 
+  h3{
+    line-height: 2rem;
+  }
+
   &.description{
     padding: 10% 0;
+  }
+
+  &.bg-beige{
+    padding: 10% 0;
+    background-color: $blue;
   }
 
   & .features{
@@ -777,6 +809,13 @@ a:focus {
       }
     }
   }
+
+  .render-vista{
+    background-image: url('../casas-puebla-vista-parque.jpg');
+    background-size: cover;
+    width: 100%;
+    min-height: 800px;
+  }
 }
 
 // end gallery section
@@ -785,30 +824,32 @@ a:focus {
 .desarrollo{
 padding-top: 0;
 
-
-
-& .title.header{
+& .bg-desarrollo{
+  background-image: url('../desarrollo-header.jpg');
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+
+& .title.header{
   font-size: 20vw;
-  text-shadow: 30px 3px 50px #404040;
-  color: $beige;
+  text-shadow: 30px 3px 30px #040404;
+    color: #b0896d;
+    line-height: 10rem;
+    mix-blend-mode: exclusion;
 }
 
 & .subtitle.header{
   text-align: center;
   font-size: 2.5vw;
-  text-shadow: 30px 3px 50px #404040;
+  text-shadow: 3px 3px 5px rgba(0,0,0,1);
 }
 
-  & .bg-desarrollo{
-    background-image: url('../desarrollo-header.jpg');
-    background-size: cover;
-    height: 80vh;
-    width: 100%;
-  }
 }
 
 
