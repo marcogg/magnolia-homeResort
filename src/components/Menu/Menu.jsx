@@ -29,7 +29,6 @@ const Menu = () => {
                   <div className='overlay-content'>
                     <Link to='/'>Inicio</Link>
                     <Link to='/desarrollo'>Desarrollo </Link>
-                    <Link to='/galeria'>Galería </Link>
                     <Link to='/amenidades'>Amenidades </Link>
                     <Link to='/contacto'>Haz una cita </Link>
                   </div>
@@ -41,7 +40,7 @@ const Menu = () => {
                 </span>
               </Link>
               <div className='user_option'>
-                <Link to='/contacto'>
+                <Link className='cta margin-menu' to='/contacto'>
                   Haz una cita
                 </Link>
               </div>

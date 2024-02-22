@@ -18,7 +18,7 @@ const Hero = () => {
                         <h1>Magnolia <br />
                           <span className='light-300'>Home Resort</span>
                         </h1>
-                        <p>9 Exclusivas residencias con concepto House Garden. Desde $7.9 MDP</p>
+                        <p>9 Exclusivas residencias con concepto House Garden.<br /><span className='x-2 text-blue light-200'>Desde $7.9 MDP</span></p>
                         <div>
                           <Link to='https://api.whatsapp.com/send?phone=522221209242&text=%C2%A1Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20del%20desarrollo%20de%20Magnolia'>
                             Haz una cita
@@ -41,7 +41,7 @@ const Hero = () => {
                           </div>
                         </div>
                       </div>
-                      <div className='carousel_control-box'>
+                      {/* <div className='carousel_control-box'>
                         <div className='carousel_btn-container'>
                           <Link className='carousel-control-prev' to='#carouselExampleIndicators' role='button' data-slide='prev'>
                             <span className='sr-only' />
@@ -55,7 +55,7 @@ const Hero = () => {
                           <li data-target='#carouselExampleIndicators' data-slide-to={1} className='li_two'>02</li>
                           <li className='ol_design' />
                         </ol>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>

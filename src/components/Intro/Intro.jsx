@@ -46,8 +46,8 @@ const Intro = () => {
         {/* gallery section */}
         <section className='gallery_section layout_padding-top description'>
           <div className='container'>
-            <div className='row'>
-              <div className='col-lg-5 ml-auto'>
+            <div className='row align-items-center'>
+              <div className='col-12 col-lg-6 ml-auto'>
                 <div className='heading_container'>
                   <h2>
                     Se parte de un exclusivo concepto de tan solo 9 residencias
@@ -55,14 +55,14 @@ const Intro = () => {
                   <p>
                     Ubicadas en la mejor reserva de Punta Cascatta, con una vista única al Parque de las Cascadas
                   </p>
-                  <div className='row'>
-                    <div />
-                  </div>
-
                   <Link to='/desarrollo'>
                     Conoce las casas
                   </Link>
                 </div>
+              </div>
+              <div className='col-12 col-lg-6'>
+                <img className='img-fluid' src='../casas-de-lujo-puebla.jpg' />
+                <div />
               </div>
             </div>
           </div>
@@ -70,7 +70,7 @@ const Intro = () => {
             <div className='row mb-5'>
               <h3>Cada residencia cuenta con </h3>
             </div>
-            <div className='row'>
+            <div className='row align-items-center'>
               <div className='col-3 f1'>
                 <span className='icon xl material-symbols-outlined'>king_bed</span>
                 <p>4 recámaras</p>
@@ -85,7 +85,7 @@ const Intro = () => {
               </div>
               <div className='col-3 f4'>
                 <span className='icon xl material-symbols-outlined'>garage_home</span>
-                <p>3 Lugares de estacionamiento techado</p>
+                <p>3 cajones techados</p>
               </div>
             </div>
 

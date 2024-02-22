@@ -63,16 +63,16 @@ const Footer = () => {
                   <div className='col-md-2 col-lg-3'>
                     <div className='info_link-box'>
                       <ul>
-                        <li className=' '>
+                        <li>
+                          <Link to='/'>Inicio</Link>
+                        </li>
+                        <li>
                           <Link to='/desarrollo'>Desarrollo</Link>
                         </li>
-                        <li className>
+                        <li>
                           <Link to='/amenidades'>Amenidades</Link>
                         </li>
-                        <li className>
-                          <Link to='/galeria'>Galería</Link>
-                        </li>
-                        <li className>
+                        <li>
                           <Link to='/contacto'>Contacto</Link>
                         </li>
                       </ul>
