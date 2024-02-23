@@ -2,7 +2,7 @@
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import Amenidades from './Pages/Amenidades'
-import Contacto from './Pages/Contacto'
+import {Contacto} from './Pages/Contacto'
 import Desarrollo from './Pages/Desarrollo'
 import Galeria from './Pages/Galeria'
 import './app.scss'

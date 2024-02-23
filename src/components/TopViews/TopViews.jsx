@@ -30,7 +30,7 @@ const TopViews = () => {
             <div className='col-12 col-md-4 col-lg-4'>
               <h3 className='light-300 text-center'>Planta Baja</h3>
               <button onClick={plantaBaja} className='cta negative'>{`${isPB ? 'Ocultar Planta Baja' : 'Ver Planta Baja'}`}</button>
-              <div id='planta-baja' className={`${isPB ? 'showView' : 'display-none'}`} >
+              <div id='planta-baja' className={`${isPB ? 'showView' : 'display-none'}`}>
                 <img src='./../blueprints/planta-baja.webp' className='img-fluid' />
                 <ul className='align-items-center row'>
                   <li><span className='material-symbols-outlined list-icon'>scene</span> Estancia</li>

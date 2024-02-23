@@ -34,13 +34,13 @@ const Menu = () => {
                   </div>
                 </div>
               </div>
-              <Link to='/'>
+              {/* <Link to='/'>
                 <span className='navbar-brand'>
                   Inicio
                 </span>
-              </Link>
+              </Link> */}
               <div className='user_option'>
-                <Link className='cta margin-menu' to='/contacto'>
+                <Link className='cta to-left' to='/contacto'>
                   Haz una cita
                 </Link>
               </div>

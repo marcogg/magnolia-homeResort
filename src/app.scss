@@ -56,7 +56,7 @@ $blue-light: #2f6170;
 }
 
 .line-height-compact{
-  line-height: 1rem;
+  line-height: 1.5rem;
 }
 
 @font-face {
@@ -531,8 +531,6 @@ a:focus {
       }
     }
 
-
-
     .carousel-control-prev {
       background-image: url('/prev.png');
 
@@ -603,6 +601,12 @@ a:focus {
 
 
 }
+
+  @media screen and (max-width:768px) {
+      .slider_section .img-box{
+        margin-top: 20px;
+      }
+     }
 
 // end slider section
 
@@ -738,10 +742,6 @@ a:focus {
 
 .gallery_section {
 
-  &.description {
-  padding-bottom: 45px;
-}
-
   .title{
     margin-bottom: 5rem;
 
@@ -755,9 +755,6 @@ a:focus {
     line-height: 2rem;
   }
 
-  &.description{
-    padding:0 0 10vw 0;
-  }
 
   &.bg-beige{
     padding: 10% 0;
@@ -792,7 +789,7 @@ a:focus {
 
   .gallery_container {
     position: relative;
-    max-width: 1500px;
+    // max-width: 1500px;
     margin: 0;
     background-color: #ab7956;
     z-index: 0;
@@ -970,15 +967,33 @@ section{
 
 }
 
+.amenidades-bg{
+  background: url('../amenidades-lomas-angelopolis.webp');
+  background-size: cover;
+  width: 100%;
+  min-height: 800px;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & .title.header{
+  font-size: clamp(18pt, 15vw, 60pt);
+  text-shadow: 30px 3px 30px #040404;
+  color: #b0896d;
+    
+  text-align: center;
+    // mix-blend-mode: multiply;
+}
+}
+
 .form-container{
   padding:5vw;
 }
 
 .cta{
-  @include hero_btn($btnColor, $beige, 10px, 35px, 30px);
+  @include hero_btn($btnColor, $beige, 10px, 20px, 30px);
   text-align: center;
-  margin-top: 4vw;
-  margin-bottom: 4vw;
   width: 100%;
 
   &.margin-menu{
@@ -1041,16 +1056,15 @@ margin-top: 0;
 
 
 & .title.header{
-  font-size: 20vw;
+  font-size: clamp(40pt, 25vw,30vw);
   text-shadow: 30px 3px 30px #040404;
-    color: #b0896d;
-    line-height: 10rem;
-    mix-blend-mode: exclusion;
+    color: $white;
+    line-height: clamp(10vw, 15vw, 20vw);
 }
 
 & .subtitle.header{
   text-align: center;
-  font-size: 2.5vw;
+  font-size: clamp(3vw, 5vw, 50pt);
   text-shadow: 3px 3px 5px rgba(0,0,0,1);
 }
 
@@ -1328,6 +1342,7 @@ margin-top: 0;
     flex-direction: column;
   }
 
+
   .info_contact {
     .link-box {
       display: flex;
@@ -1353,6 +1368,23 @@ margin-top: 0;
   }
 }
 
+// Responsive Footer
+  @media screen and (max-width:768px) {
+  .info_contact .link-box {
+    justify-content: center;
+    }
+
+    .info_section .social_box {
+      justify-content: center;
+    }
+
+    .info_section .heading_container{
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
 /* end info section */
 
 /* footer section*/
@@ -1362,6 +1394,15 @@ margin-top: 0;
   button{
     background-color: none;
     border: none;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .footer{
+    text-align: center;
+    button{
+      justify-content: center;
+    }
   }
 }
 .btn-contact {

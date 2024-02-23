@@ -37,7 +37,7 @@ const Footer = () => {
                                 e.preventDefault()
                                 window.location = 'mailto:cac@metropolis.com'
                               }}
-                            >cac@metropilis.com
+                            >cac@metropolis.com
                             </button>
                           </h6>
                         </div>
@@ -80,12 +80,13 @@ const Footer = () => {
                   </div>
                   <div className='col-md-6 '>
                     <div className='social_box'>
-                      <Link>
-                        <img src='../facebook.png' alt />
+                      <Link to={'https://www.facebook.com/magnoliaresi'}>
+                        <img src='../facebook.png' />
                       </Link>
-                      <a href='#'>
-                        <img src='../instagram.png' alt />
-                      </a>
+                      <Link to={'https://www.instagram.com/magnolia.residences/'}>
+                        <img src='../instagram.png' />
+                      </Link>
+                      
                     </div>
                   </div>
                 </div>

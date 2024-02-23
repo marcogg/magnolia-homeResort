@@ -35,7 +35,7 @@ const Hero = () => {
                             Vive cada día como si estuvieras de vacaciones
                           </p>
                           <div>
-                            <Link to='https://api.whatsapp.com/send?phone=522221209242&text=%C2%A1Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20del%20desarrollo%20de%20Magnolia'>
+                            <Link className='mb-5' to='https://api.whatsapp.com/send?phone=522221209242&text=%C2%A1Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20del%20desarrollo%20de%20Magnolia'>
                               Haz una cita
                             </Link>
                           </div>

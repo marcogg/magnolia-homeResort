@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import HubspotForm from 'react-hubspot-form'
 
 const Intro = () => {
   return (
@@ -43,6 +44,29 @@ const Intro = () => {
           </div>
         </section>
         {/* end about section */}
+        {/* Contact Form */}
+      <section className='bg-blue border-bottom py-5'>
+        <div className='container'>
+          <div className='row align-items-center'>
+            <div className='col-lg-8'>
+              <h2 className='light-200 x-4 line-height-compact'>Cotiza tu nueva<br /><span className='allison x-10 text-beige'>inversión inmobiliaria</span></h2>
+            </div>
+            <div className='col-lg-4 bg-beige'>
+              <h3 className='light-300 mb-3 text-blue'>Déjanos tu información</h3>
+              <p className='mb-5 text-blue'>En breve te contactaremos</p>
+              <HubspotForm
+                portalId='21634170'
+                formId='e4e1d2d9-4bc9-4a26-ae9b-94c4cfd9f3f5'
+                onSubmit={() => console.log('Enviado!')}
+                onReady={(form) => console.log(`Form ready: ${form}`)}
+                loading={<div>Cargando...</div>}
+              />
+              <div className='patch-hubspot-light' />
+              {/* <Link className='cta negative' to='/contacto'>Solicitar cotización</Link> */}
+            </div>
+          </div>
+        </div>
+      </section>
         {/* gallery section */}
         <section className='gallery_section layout_padding-top description'>
           <div className='container'>
@@ -55,7 +79,7 @@ const Intro = () => {
                   <p>
                     Ubicadas en la mejor reserva de Punta Cascatta, con una vista única al Parque de las Cascadas
                   </p>
-                  <Link to='/desarrollo'>
+                  <Link to='/desarrollo' className='mb-5'>
                     Conoce las casas
                   </Link>
                 </div>
@@ -77,7 +101,7 @@ const Intro = () => {
               </div>
               <div className='col-3 f2'>
                 <span className='icon xl material-symbols-outlined'>desktop_windows</span>
-                <p>Sala de TV</p>
+                <p>Sala de T.V.</p>
               </div>
               <div className='col-3 f3'>
                 <span className='icon xl material-symbols-outlined'>deck</span>
@@ -91,7 +115,7 @@ const Intro = () => {
 
           </div>
           <div className='gallery_container'>
-            <div className='gallery_bg'>
+            <div className='container-full gallery_bg'>
               <img src='../gallery-bg-casas-puebla.png' />
             </div>
             <div className='container'>

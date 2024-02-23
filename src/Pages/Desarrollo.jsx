@@ -29,7 +29,7 @@ const Desarrollo = () => {
       </section>
       {/* end about section */}
       {/* gallery section */}
-      <section className='gallery_section layout_padding-top description'>
+      <section className='gallery_section layout_padding-top description py-5'>
         <div className='container'>
           <div className='row align-items-center'>
             <div className='col-lg-5 ml-auto'>
@@ -115,10 +115,10 @@ const Desarrollo = () => {
 
       <section className='container'>
         <div className='row py-5'>
-          <div className='col-6 py-5'>
+          <div className='col-12 col-md-6 col-lg-6 py-5'>
             <h2 className='line-height-compact'><span className='text-blue light-300'>Redefinimos la idea</span><br /><span className='allison x-6'>de vivir en condominio</span></h2>
           </div>
-          <div className='col-6'>
+          <div className='col-12 col-md-6 col-lg-6'>
             <p>Descubre comó puedes superar tus expectativas disfrutando de todas las comodidades y servicios de un hotel de 5 estrellas sin salir de casa.</p>
             <p> Conoce la mejor casa club de Puebla, cada rincón ha sido diseñado para ofrecerte una experiencia cómoda y funcional, cuenta con todas las amenidades y servicios que requiere la vida moderna.</p>
 
@@ -130,7 +130,7 @@ const Desarrollo = () => {
         </div>
         <div className='row'>
           <div className='col-12 col-md-6 col-lg-4 offset-lg-4'>
-            <Link className='cta' to='/amenidades'>Ver todas las amenidades</Link>
+            <Link className='cta my-5' to='/amenidades'>Ver todas las amenidades</Link>
           </div>
         </div>
 
@@ -141,15 +141,15 @@ const Desarrollo = () => {
       <section className='gallery_section layout_padding-top bg-beige'>
         <div className='container'>
           <div className='row align-items-center '>
-            <div className='col-6'>
+            <div className='col-12 col-md-6 col-lg-6'>
               <div className='decoration-container'>
                 <div className='bordered-box' />
                 <img src='../casas-puebla-angelopolis.jpg' className='img-fluid img-bordered' />
               </div>
             </div>
-            <div className='col-6 p-5'>
+            <div className='col-12 col-md-6 col-lg-6 p-5'>
               <div className='title'>
-                <h3 className='line-height-compact'>El concepto </h3>
+                <h3 className='line-height-compact x-4'>El concepto </h3>
                 <h3 className='allison x-10 text-beige'>
                   Garden House
                 </h3>
@@ -173,8 +173,8 @@ const Desarrollo = () => {
               <h2 className='light-200 x-4 line-height-compact'>Cotiza tu nueva<br /><span className='allison x-10 text-beige'>inversión inmobiliaria</span></h2>
             </div>
             <div className='col-lg-4 bg-beige'>
-            <h3 className='light-300 mb-3 text-blue'>Déjanos tu información</h3>
-            <p className='mb-5 text-blue'>En breve te contactaremos</p>
+              <h3 className='light-300 mb-3 text-blue'>Déjanos tu información</h3>
+              <p className='mb-5 text-blue'>En breve te contactaremos</p>
               <HubspotForm
                 portalId='21634170'
                 formId='e4e1d2d9-4bc9-4a26-ae9b-94c4cfd9f3f5'
@@ -182,7 +182,7 @@ const Desarrollo = () => {
                 onReady={(form) => console.log(`Form ready: ${form}`)}
                 loading={<div>Cargando...</div>}
               />
-              <div className='patch-hubspot-light'></div>
+              <div className='patch-hubspot-light' />
               {/* <Link className='cta negative' to='/contacto'>Solicitar cotización</Link> */}
             </div>
           </div>
