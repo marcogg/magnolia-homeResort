@@ -104,6 +104,19 @@ border-radius: 5px;
   left: 50%;
 }
 
+@media screen and (max-width: 768px){
+  .bordered-box{
+    width: 160px;
+    height: 160px;
+    z-index: 5;
+    display: block;
+    border: 5px solid $white;
+    position: absolute;
+    top: 60%;
+    left: 60%;
+}
+}
+
 @mixin hero_btn($col1, $col2, $pad1, $pad2, $bRadius) {
   display: inline-block;
   background: $col1;
@@ -423,7 +436,7 @@ a:focus {
 .user_option {
   display: flex;
   align-items: center;
-  margin-left: 45px;
+  // margin-left: 45px;
 
   a {
     display: flex;
@@ -871,8 +884,28 @@ a:focus {
     background-image: url('../casas-puebla-vista-parque.jpg');
     background-size: cover;
     width: 100%;
-    min-height: 800px;
+    min-height: 600px;
+    background-position: center;
+
   }
+}
+@media screen and (max-width:768px){
+  .gallery_section{
+    & 
+    .title{
+      margin-bottom: 5rem;
+  
+      & h3{
+        font-size: clamp(5vw, 10vw, 20vw);
+        font-weight: lighter;
+
+        &.allison{
+          font-size: clamp(10vw, 20vw, 30vw);
+        }
+      }
+    }  
+  }
+
 }
 
 // end gallery section
@@ -931,12 +964,9 @@ a:focus {
 
 // Contact page
 
-section{
-  &.contact{
-    height: 100%;
-  }
-}
+section.contact{
 
+}
 .bg-beige{
     padding: 3vw;
     background-color: $beige-light;
@@ -956,7 +986,7 @@ section{
   width: 100%;
   height: 55px;
   position: relative;
-  top: -55px;
+  top: -50px;
   z-index: 2;
 }
 
@@ -964,7 +994,20 @@ section{
   background-image: url('../casas-lujo-lomas-angelopolis.webp');
   background-size: cover;
   background-position: center;
+  min-height: 100%;
+  width: 100%;
 
+}
+
+.contact-info{
+  color: $blue;
+  display: flex;
+  & button{
+    font-size: clamp(16pt, 18pt, 22pt);
+    color: $blue;
+    font-weight: 300;
+    margin-bottom: 15%;
+  }
 }
 
 .amenidades-bg{
@@ -987,8 +1030,18 @@ section{
 }
 }
 
+@media screen and (max-width:768px) {
+  .amenidades-bg{
+    & .x-10{
+      &.allison{
+        font-size: 6rem;
+      }
+    }
+  }
+}
+
 .form-container{
-  padding:5vw;
+  padding:7%;
 }
 
 .cta{
@@ -1011,7 +1064,20 @@ section{
   &.top-views{
     background: $blue-light;
     padding: 5vw 0;
+  
+    & .x-4{
+    font-size: clamp(24pt, 32pt, 32pt);
   }
+
+    & .x-10{
+      &.allison{
+      font-size: 15vh;
+    }
+    }
+
+  }
+  
+
 
   & .list-icon{
     position: relative;
@@ -1035,6 +1101,23 @@ section{
 
 .display-none{
   display: none !important;
+}
+
+
+@media screen and (max-width:768px){
+  .form-cta{
+    & h2{
+      &.x-4{
+        font-size: 2em;
+      }
+      & .x-10{
+        &.allison{
+        font-size:4rem;
+        }
+      }
+    }
+  }
+
 }
 
 //desarrollo section

@@ -29,7 +29,7 @@ const TopViews = () => {
           <div className='row views'>
             <div className='col-12 col-md-4 col-lg-4'>
               <h3 className='light-300 text-center'>Planta Baja</h3>
-              <button onClick={plantaBaja} className='cta negative'>{`${isPB ? 'Ocultar Planta Baja' : 'Ver Planta Baja'}`}</button>
+              <button onClick={plantaBaja} className='cta negative mb-5'>{`${isPB ? 'Ocultar Planta Baja' : 'Ver Planta Baja'}`}</button>
               <div id='planta-baja' className={`${isPB ? 'showView' : 'display-none'}`}>
                 <img src='./../blueprints/planta-baja.webp' className='img-fluid' />
                 <ul className='align-items-center row'>
@@ -45,7 +45,7 @@ const TopViews = () => {
             </div>
             <div className='col-12 col-md-4 col-lg-4'>
               <h3 className='light-300 text-center'>Planta Alta</h3>
-              <button onClick={plantaAlta} className='cta negative'>{`${isPA ? 'Ocultar Planta Alta' : 'Ver Planta Alta'}`}</button>
+              <button onClick={plantaAlta} className='cta negative mb-5'>{`${isPA ? 'Ocultar Planta Alta' : 'Ver Planta Alta'}`}</button>
               <div id='planta-alta' className={`${isPA ? 'showView' : 'display-none'}`}>
                 <img src='./../blueprints/planta-alta.webp' className='img-fluid' />
                 <div className='row'>
@@ -61,7 +61,7 @@ const TopViews = () => {
             </div>
             <div className='col-12 col-md-4 col-lg-4'>
               <h3 className='light-300 text-center'>Roof Garden</h3>
-              <button className='cta negative' onClick={roof}>{`${isRoof ? 'Ocultar Roof Garden' : 'Ver Roof Garden'}`}</button>
+              <button className='cta negative mb-5' onClick={roof}>{`${isRoof ? 'Ocultar Roof Garden' : 'Ver Roof Garden'}`}</button>
               <div id='roof-garden' className={`${isRoof ? 'showView' : 'display-none'}`}>
                 <img src='./../blueprints/roof-garden.webp' className='img-fluid' />
                 <ul className='align-items-center row'>

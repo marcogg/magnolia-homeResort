@@ -5,6 +5,7 @@ import { useEffect } from 'react'
 import Glider from 'react-glider'
 import 'glider-js/glider.min.js'
 import 'glider-js/glider.min.css'
+import Whatsapp from '../components/Whatsapp/Whatsapp.jsx'
 
 const Amenidades = () => {
 
@@ -23,6 +24,7 @@ const Amenidades = () => {
   return (
     <>
       <Menu />
+      <Whatsapp />
       <section>
         <div className='container-full amenidades-bg'>
           <div className='row'>
@@ -36,10 +38,10 @@ const Amenidades = () => {
         </div>
         <div className='container'>
         <div className='row my-5 align-items-center'>
-          <div className='col-lg-6 col-md-6 col-6'>
+          <div className='col-lg-6 col-md-6 col-12 mb-5'>
             <h2 className='line-height-compact'>Conoce la mejor Casa Club <br /><span className='allison x-6 text-blue'>de Puebla</span></h2>
           </div>
-          <div className='col-lg-6 col-md-6 col-6'>
+          <div className='col-lg-6 col-md-6 col-12'>
             <p>Nuestro concepto Home Resort, redefine la idea de vivir en un condominio.
             Descubre comó puedes superar tus expectativas disfrutando de todas las comodidades y servicios de un hotel de 5 estrellas sin salir de casa. 
             Conoce la mejor casa club de Puebla, cada rincón ha sido diseñado para ofrecerte una experiencia cómoda y funcional, cuenta con todas las amenidades y servicios que requiere la vida moderna.</p>
@@ -53,7 +55,7 @@ const Amenidades = () => {
         </div>
         {/* Carousel Amenidades */}
         <div className='container'>
-          <div className='row'>
+          <div className='row mt-5'>
             <div className='col-lg-12 col-md-12 col-12'>
               <Glider
                 draggable
@@ -205,7 +207,7 @@ const Amenidades = () => {
                     <div className='card'>
                       <img src='../carousel-services/lavado-autos.jpg' />
                       <div className='card-body'>
-                        <p className='card-text'>Lavado de autos</p>
+                        <p className='card-text'>Lava-autos</p>
                       </div>
                     </div>
                   </div>

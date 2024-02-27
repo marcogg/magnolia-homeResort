@@ -103,10 +103,10 @@ const Desarrollo = () => {
       <section>
         <div className='gallery_section container-full'>
           <div className='row'>
-            <div className='render-vista' />
-
+            <div className='col-12 pl-0'>
+              <div className='render-vista' />
+            </div>
           </div>
-
         </div>
       </section>
       {/* end: render */}
@@ -167,10 +167,10 @@ const Desarrollo = () => {
       <TopViews />
       {/* Contact Form */}
       <section className='bg-blue border-bottom py-5'>
-        <div className='container'>
+        <div className='container form-cta'>
           <div className='row align-items-center'>
             <div className='col-lg-8'>
-              <h2 className='light-200 x-4 line-height-compact'>Cotiza tu nueva<br /><span className='allison x-10 text-beige'>inversión inmobiliaria</span></h2>
+              <h2 className='light-200 x-4 line-height-compact mb-5'>Cotiza tu nueva<br /><span className='allison x-10 text-beige'>inversión inmobiliaria</span></h2>
             </div>
             <div className='col-lg-4 bg-beige'>
               <h3 className='light-300 mb-3 text-blue'>Déjanos tu información</h3>
