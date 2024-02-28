@@ -5,6 +5,7 @@ import Menu from '../components/Menu/Menu'
 import CarouselAmenities from '../components/CarouselAmenities/CarouselAmenities'
 import TopViews from '../components/TopViews/TopViews'
 import Whatsapp from '../components/Whatsapp/Whatsapp'
+import ScrollToTop from '../components/ScrollToTop/ScrollToTop'
 
 const Desarrollo = () => {
   return (
@@ -190,6 +191,8 @@ const Desarrollo = () => {
       </section>
       {/* footer */}
       <Footer />
+      {/* Scroll to top */}
+      <ScrollToTop />
     </>
   )
 }

@@ -48,7 +48,7 @@ const Intro = () => {
       <section className='bg-blue border-bottom py-5'>
         <div className='container form-cta'>
           <div className='row align-items-center'>
-            <div className='col-lg-8'>
+            <div className='col-lg-8 py-5'>
               <h2 className='light-200 x-4 line-height-compact'>Cotiza tu nueva<br /><span className='allison x-10 text-beige'>inversión inmobiliaria</span></h2>
             </div>
             <div className='col-lg-4 bg-beige'>

@@ -2,6 +2,7 @@ import HubspotForm from 'react-hubspot-form'
 import Menu from '../components/Menu/Menu'
 import Whatsapp from '../components/Whatsapp/Whatsapp'
 import Footer from '../components/Footer/Footer'
+import ScrollToTop from '../components/ScrollToTop/ScrollToTop'
 
 export const Contacto = () => {
   return (
@@ -64,6 +65,8 @@ export const Contacto = () => {
       <Footer />
       {/* WhatsApp */}
       <Whatsapp />
+      {/* Scroll to top */}
+      <ScrollToTop />
     </>
   )
 }

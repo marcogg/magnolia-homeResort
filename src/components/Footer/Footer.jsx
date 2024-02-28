@@ -14,7 +14,10 @@ const Footer = () => {
               </div>
               <div className='info_main'>
                 <div className='row'>
-                  <div className='col-md-6 col-lg-6'>
+                <div className='col-md-3 col-lg-3'>
+                  <img src='../logo_magnolia_1tinta.svg' width={120}/>
+                </div>
+                  <div className='col-md-6 col-lg-4'>
                     <div className='info_contact '>
                       <a href='#' className='link-box'>
                         <div className='img-box'>
@@ -60,7 +63,7 @@ const Footer = () => {
                       </a>
                     </div>
                   </div>
-                  <div className='col-md-2 col-lg-3'>
+                  <div className='col-md-2 col-lg-4'>
                     <div className='info_link-box'>
                       <ul>
                         <li>
@@ -78,7 +81,7 @@ const Footer = () => {
                       </ul>
                     </div>
                   </div>
-                  <div className='col-md-6 '>
+                  <div className='col-md-6 col-lg-1 '>
                     <div className='social_box'>
                       <Link to={'https://www.facebook.com/magnoliaresi'}>
                         <img src='../facebook.png' />

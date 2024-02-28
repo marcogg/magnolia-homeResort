@@ -6,14 +6,18 @@ import Glider from 'react-glider'
 import 'glider-js/glider.min.js'
 import 'glider-js/glider.min.css'
 import Whatsapp from '../components/Whatsapp/Whatsapp.jsx'
+import ScrollToTop from '../components/ScrollToTop/ScrollToTop'
 
 const Amenidades = () => {
 
   useEffect(() => {
+
       const script = document.createElement('script')
-      script.src = 'https://app.cloudpano.com/public/shareScript.js'
+      script.src = 'https://virtualtour.shift-mx.com/public/shareScript.js'
       script.async = true
-      script.setAttribute('data-short', 'Zr7sc28jp')
+      script.setAttribute('data-path', 'tours')
+      script.setAttribute('data-short', '1yK1fv8ZR')
+      script.setAttribute('data-is-self-hosted','false')
       script.width = '100%'
       script.height = '500px'
       const element = document.getElementById('tour');
@@ -228,6 +232,7 @@ const Amenidades = () => {
         </div>
       </section>
       <Footer />
+      <ScrollToTop />
     </>
   )
 }
