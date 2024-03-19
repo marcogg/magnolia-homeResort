@@ -14,9 +14,9 @@ const Footer = () => {
               </div>
               <div className='info_main'>
                 <div className='row'>
-                <div className='col-md-3 col-lg-3'>
-                  <img src='../logo_magnolia_1tinta.svg' width={120}/>
-                </div>
+                  <div className='col-md-3 col-lg-3'>
+                    <img src='../logo_magnolia_1tinta.svg' width={120} />
+                  </div>
                   <div className='col-md-6 col-lg-4'>
                     <div className='info_contact '>
                       <a href='#' className='link-box'>
@@ -89,7 +89,7 @@ const Footer = () => {
                       <Link to={'https://www.instagram.com/magnolia.residences/'}>
                         <img src='../instagram.png' />
                       </Link>
-                      
+
                     </div>
                   </div>
                 </div>
@@ -101,12 +101,20 @@ const Footer = () => {
         {/* footer section */}
         <footer className='footer_section '>
           <div className='container'>
-            <p>2024 © <span id='displayYear' /> Todos los derechos reservados
-            </p>
+            <div className='row'>
+              <div className='col-lg-7 col-md-7 col-12'>
+                <p>2024 © <span id='displayYear' /> Todos los derechos reservados</p>
+              </div>
+              <div className='col-lg-5 col-md-5 col-12'>
+                <p>Consulta nuestro <Link onClick={(e) => {
+                  e.preventDefault()
+                  window.location = '../../AvisodePrivacidadMagnolia.pdf'
+                }}><span className='text-beige'>Aviso de privacidad</span></Link></p>
+              </div>
+            </div>
           </div>
         </footer>
       </div>
-
     </>
   )
 }
