@@ -1534,3 +1534,58 @@ margin-top: 0;
   color: #fff;
   opacity: 1;
 }
+
+
+// Gracias por contactarnos 
+
+.gracias {
+  & .title{
+    font-size:clamp(18pt, 6vw, 30pt);
+    font-weight: bold;
+  }
+
+  & .subtitle{
+    font-size:clamp(16pt, 3vw, 22pt);
+    font-weight: 300;
+  }
+
+  & p {
+    font-size: clamp(14pt, 3vw, 18pt);
+    font-weight: 200;
+  }
+
+  & .bg-gracias{
+    background-image: url('../garden-houses-puebla.jpg');
+    width: 100%;
+    min-height: 30vh;
+    height: 80vh;
+    background-size: cover;
+  }
+  & .btn-blue{
+       display: inline-block;
+    background: #114352;
+    color: #b0896d;
+    padding: 10px 35px;
+    border-radius: 30px;
+    border: 1px solid #114352;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    margin-top: 15px;
+
+    &:hover{
+          background: transparent;
+    color: #114352;
+    }
+  }
+}
+
+@media screen and (max-width:768px) {
+  .gracias{
+    & .row {
+      flex-direction: column-reverse;
+    }
+    & .bg-gracias{
+      height: 400px;
+    }
+  }
+}
