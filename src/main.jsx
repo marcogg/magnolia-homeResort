@@ -1,13 +1,12 @@
-// import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import Amenidades from './Pages/Amenidades'
 import { Contacto } from './Pages/Contacto'
 import Desarrollo from './Pages/Desarrollo'
-import Galeria from './Pages/Galeria'
 import './app.scss'
 import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom'
 import Gracias from './Pages/Gracias.jsx'
+import Ubicacion from './Pages/Ubicacion.jsx'
 
 const router = createBrowserRouter(
   [
@@ -28,8 +27,8 @@ const router = createBrowserRouter(
       element: <Desarrollo />
     },
     {
-      path: '/galeria',
-      element: <Galeria />
+      path: '/ubicacion',
+      element: <Ubicacion />
     },
     {
       path: '/gracias-por-contactarnos',

@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom'
-
 const Hero = () => {
   return (
     <>
@@ -8,64 +6,18 @@ const Hero = () => {
         <section className=' slider_section position-relative'>
           <div className='container-fluid'>
             <div className='row slider-row'>
-              <div className='col-lg-3 offset-lg-1'>
-
-                {/* Begin Bootstrap Carousel */}
-                <div id='carouselExampleIndicators' className='carousel slide'>
-                  <div className='carousel-inner'>
-                    <div className='carousel-item active'>
-                      <div className='detail-box'>
-                        <h1>Magnolia <br />
-                          <span className='light-300'>Home Resort</span>
-                        </h1>
-                        <p>9 Exclusivas residencias con concepto House Garden.<br /><span className='x-2 text-blue light-200'>Desde $7.6 MDP</span></p>
-                        <div>
-                          <Link to='https://api.whatsapp.com/send?phone=522221209242&text=%C2%A1Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20del%20desarrollo%20de%20Magnolia'>
-                            Haz una cita
-                          </Link>
-                        </div>
-                      </div>
-                      <div className='carousel-item'>
-                        <div className='detail-box'>
-                          <h1>
-                            Magnolia <br />
-                            <span className='light-300'>Home Resort</span>
-                          </h1>
-                          <p>
-                            Vive cada día como si estuvieras de vacaciones
-                          </p>
-                          <div>
-                            <Link className='mb-5' to='https://api.whatsapp.com/send?phone=522221209242&text=%C2%A1Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20del%20desarrollo%20de%20Magnolia'>
-                              Haz una cita
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                      {/* <div className='carousel_control-box'>
-                        <div className='carousel_btn-container'>
-                          <Link className='carousel-control-prev' to='#carouselExampleIndicators' role='button' data-slide='prev'>
-                            <span className='sr-only' />
-                          </Link>
-                          <Link className='carousel-control-next' to='#carouselExampleIndicators' role='button' data-slide='next'>
-                            <span className='sr-only' />
-                          </Link>
-                        </div>
-                        <ol className='carousel-indicators'>
-                          <li data-target='#carouselExampleIndicators' data-slide-to={0} className='active li_one'>01</li>
-                          <li data-target='#carouselExampleIndicators' data-slide-to={1} className='li_two'>02</li>
-                          <li className='ol_design' />
-                        </ol>
-                      </div> */}
-                    </div>
-                  </div>
-                </div>
-                {/* End Bootstrap Carousel */}
-              </div>
-              <div className='col-lg-8 px-0'>
+              <div className='col-lg-12 px-0'>
                 <div className='img-box'>
-                  <img src='/hero_magnolia.jpg' value='Hero Magnolia' className='img-fluid clip-mask' />
+
+                  <video controls autoPlay className='videoHeader'>
+                    <source src='./header-video.mp4' type='video/mp4' />
+                    <source src='./header-video.mp4' type='video/mp4' />
+                  </video>
+                  {/* <img src='/hero_magnolia.jpg' value='Hero Magnolia' className='img-fluid clip-mask' /> */}
                 </div>
               </div>
+
+
 
             </div>
           </div>

@@ -25,11 +25,12 @@ const Menu = () => {
                     <span className='s-3'> </span>
                   </button>
                 </div>
-                <div id='myNav' className={`overlay ${isMenuActive ? 'menu_width' : ''}`}>
-                  <div className='overlay-content'>
-                    <Link to='/'>Inicio</Link>
+                <div id='myNav' className={`${isMenuActive ? 'overlay menu_width' : ''}`}>
+                  <div className='overlay-content menu_top'>
+                    <Link to='/'>Proyecto</Link>
                     <Link to='/desarrollo'>Desarrollo </Link>
                     <Link to='/amenidades'>Amenidades </Link>
+                    <Link to='/ubicacion'>Ubicación </Link>
                     <Link to='/contacto'>Haz una cita </Link>
                   </div>
                 </div>
@@ -39,11 +40,11 @@ const Menu = () => {
                   Inicio
                 </span>
               </Link> */}
-              <div className='user_option'>
+              {/* <div className='user_option'>
                 <Link className='cta to-left' to='/contacto'>
                   Haz una cita
                 </Link>
-              </div>
+              </div> */}
             </div>
           </nav>
         </div>

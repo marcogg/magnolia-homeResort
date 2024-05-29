@@ -208,6 +208,14 @@ p {}
   }
 }
 
+// Buttons
+
+.btn-cta {
+  @include hero_btn($beige, $blue, 10px, 35px, 30px);
+      text-transform: uppercase;
+      margin-top: 40px;
+}
+
 /*header section*/
 
 .hero_area {
@@ -302,6 +310,19 @@ p {}
   }
 }
 
+.videoHeader{
+  width: 100%;
+  height: auto;
+  margin-top: -25px;
+}
+
+.bg-beige-light{
+  background-color: #cea88c;
+  width: 100vw;
+}
+
+
+
 .hero-img{
   border-radius: 0 20%;
 }
@@ -350,6 +371,32 @@ p {}
       border-color: transparent;
       background-color: $white;
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu_top{
+    display: flex;
+    flex-direction: row !important;
+    width: 100vw !important;
+    justify-content: space-around;
+
+    & a{
+        color: $white;
+    }
+
+    & a:hover {
+      color: $beige-light;
+    }
+
+    & a:last-child {
+      background: $blue;
+      border-radius: 2px;
+      padding: 10px 15px;
+    }
+  }
+  .custom_menu-btn{
+    display: none !important;
   }
 }
 
@@ -462,7 +509,7 @@ a:focus {
 // slider section
 .slider_section {
   padding-top: 45px;
-  padding-bottom: 45px;
+  padding-bottom: -10px;
 
   #carouselExampleIndicators {
     flex: 1;
@@ -623,7 +670,36 @@ a:focus {
 
 // end slider section
 
+// intro section
 
+.bg-beige-dark{
+  background:#ab7956;
+}
+
+.intro-amenities{
+
+  & .d-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px
+  }
+
+  & .amenity{
+    background-color: $beige-light;
+    width: 100%;
+    text-align: center;
+    color: $blue;
+  }
+
+  .btn-cta{
+    @include hero_btn($btnColor, $beige, 10px, 35px, 30px);
+    text-transform: uppercase;
+    margin-top: 15px;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+  }
+}
 
 
 // about section
@@ -635,7 +711,7 @@ a:focus {
   }
 
   .bg-magnolia{
-    background-image: url(../fachada_magnolia.jpg);
+    background-image: url(../alberca-exterior.jpg);
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -809,11 +885,14 @@ a:focus {
     padding: 30px 0;
 
     .gallery_bg {
+      background-image: url(../public/gallery-bg-casas-puebla.png);
+      background-size: 50%;
+      background-repeat: no-repeat;
+      background-position: center center;
       position: absolute;
+
+      height: 100%;
       width: 100%;
-      top: -50%;
-      transform: translate(50%, -50%);
-      transform: scale(0.35);
       margin-left: 0;
       z-index: 2;
 
@@ -1363,7 +1442,7 @@ margin-top: 0;
 /* info section */
 .info_section {
   position: relative;
-  margin-top: -125px;
+  // margin-top: -125px;
 
   .heading_container {
     margin-bottom: 25px;
@@ -1472,7 +1551,7 @@ margin-top: 0;
 
 /* footer section*/
 .footer {
-  margin-top: 40px;
+  // margin-top: 40px;
   background-color: $blue;
   button{
     background-color: none;
