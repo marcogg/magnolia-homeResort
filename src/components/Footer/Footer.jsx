@@ -76,6 +76,9 @@ const Footer = () => {
                           <Link to='/amenidades'>Amenidades</Link>
                         </li>
                         <li>
+                          <Link to='/ubicacion'>Ubicación</Link>
+                        </li>
+                        <li>
                           <Link to='/contacto'>Contacto</Link>
                         </li>
                       </ul>

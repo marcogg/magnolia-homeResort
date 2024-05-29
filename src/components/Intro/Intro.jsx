@@ -23,10 +23,10 @@ const Intro = () => {
           <div className='container-full bg-beige-light my-5 py-5'>
             <div className='container'>
               <div className='row align-items-center'>
-                <div className='col-7'>
+                <div className='col-md-7 col-lg-7 col-12'>
                   <img src='/mapa-ubicacion-magnolia.svg' className='img-fluid' />
                 </div>
-                <div className='col-5'>
+                <div className='col-md-5 col-lg-5 col-12'>
                   <h2><b>La zona más exclusiva de la ciudad de Puebla</b></h2>
                   <h4><span className='light-300'>En el corazón de Lomas de Angelópolis</span></h4>
                 </div>
