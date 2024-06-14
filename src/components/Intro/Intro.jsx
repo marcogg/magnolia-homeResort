@@ -165,7 +165,7 @@ const Intro = () => {
                           <h1>Magnolia <br />
                             <span className='light-300'>Home Resort</span>
                           </h1>
-                          <p>9 Exclusivas residencias con concepto House Garden.<br /><span className='x-2 text-blue light-200'>Desde $7.1 MDP</span></p>
+                          <p>9 Exclusivas residencias con concepto House Garden.<br /><span className='x-2 text-blue light-200'>Desde $7.5 MDP</span></p>
                           <div>
                             <Link to='/desarrollo'>
                               Conoce las casas
