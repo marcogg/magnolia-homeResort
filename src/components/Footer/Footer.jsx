@@ -38,9 +38,9 @@ const Footer = () => {
                             <button
                               className='btn-contact' onClick={(e) => {
                                 e.preventDefault()
-                                window.location = 'mailto:cac@metropolis.com'
+                                window.location = 'mailto:cac@metropolis.mx'
                               }}
-                            >cac@metropolis.com
+                            >cac@metropolis.mx
                             </button>
                           </h6>
                         </div>
