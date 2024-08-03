@@ -182,6 +182,20 @@ const Desarrollo = () => {
       {/* Gallery */}
       <section id='gallery' className='gallery_section layout_padding-top bg-beige'>
         <div className='container-fluid'>
+          <div className='row px-5 mb-5'>
+            <div className='col-12'>
+              <div className='title'>
+                <h3 className='x-4 text-center'>
+                  Etapa 1: 100% Vendida
+                </h3>
+              </div>
+            </div>
+            <div className='col-12'>
+              <img src='./../../etapas.png' className='img-fluid' />
+            </div>
+          </div>
+        </div>
+        <div className='container-fluid'>
           <div className='row align-items-center justify-content-center'>
             {/* Masonry */}
             <div className="grid">
