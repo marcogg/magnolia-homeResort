@@ -6,8 +6,23 @@ import CarouselAmenities from '../components/CarouselAmenities/CarouselAmenities
 import TopViews from '../components/TopViews/TopViews'
 import Whatsapp from '../components/Whatsapp/Whatsapp'
 import ScrollToTop from '../components/ScrollToTop/ScrollToTop'
+import { useEffect } from 'react'
+import Masonry from 'masonry-layout'
 
 const Desarrollo = () => {
+
+  useEffect(() => {
+    const masonry = () => {
+      let elem = document.querySelector('.grid')
+      return new Masonry(elem, {
+        itemSelector: '.grid-item',
+        columnWidth: 200,
+        gutter: 5,
+      })
+    }
+    return masonry
+  }, [])
+
   return (
     <>
       {/* Menu */}
@@ -140,8 +155,8 @@ const Desarrollo = () => {
       {/* end: Casa Club */}
 
       <section className='gallery_section layout_padding-top bg-beige'>
-        <div className='container'>
-          <div className='row align-items-center '>
+        <div className='container-fluid'>
+          <div className='row align-items-center'>
             <div className='col-12 col-md-6 col-lg-6'>
               <div className='decoration-container'>
                 <div className='bordered-box' />
@@ -161,6 +176,63 @@ const Desarrollo = () => {
               <br />
               <p>Vivir en Punta Cascatta es disfrutar de todo lo que exige la vida moderna con la seguridad y tranquilidad que te da no tener que salir de casa.</p>
             </div>
+          </div>
+        </div>
+      </section>
+      {/* Gallery */}
+      <section id='gallery' className='gallery_section layout_padding-top bg-beige'>
+        <div className='container-fluid'>
+          <div className='row align-items-center justify-content-center'>
+            {/* Masonry */}
+            <div className="grid">
+              <div className="grid-item grid-item--width2">
+                <img src='../../desarrollo/cocina-barra-min.jpg' className='img-fluid' />
+              </div>
+              <div className="grid-item grid-item--width2">
+                <img src='../../desarrollo/bano-min.jpg' className='img-fluid' />
+              </div>
+              <div className="grid-item">
+                <img src='../../desarrollo/bano-2-min.jpg' className='img-fluid' />
+              </div>
+              <div className="grid-item">
+                <img src='../../desarrollo/cocina-vista-min.jpg' className='img-fluid' />
+              </div>
+              <div className="grid-item">
+                <img src='../../desarrollo/cuarto-lavado-min.jpg' className='img-fluid' />
+              </div>
+              <div className="grid-item">
+                <img src='../../desarrollo/fachada-min.jpg' className='img-fluid' />
+              </div>
+              <div className="grid-item">
+                <img src='../../desarrollo/recamara-2-min.jpg' className='img-fluid' />
+              </div>
+              <div className="grid-item">
+                <img src='../../desarrollo/recamara-min.jpg' className='img-fluid' />
+              </div>
+              <div className="grid-item grid-item--width2">
+                <img src='../../desarrollo/recamara-principal-min.jpg' className='img-fluid' />
+              </div>
+              <div className="grid-item grid-item--width2">
+                <img src='../../desarrollo/sala-min.jpg' className='img-fluid' />
+              </div>
+              <div className="grid-item grid-item--width2">
+                <img src='../../desarrollo/sala-tv-min.jpg' className='img-fluid' />
+              </div>
+              <div className="grid-item">
+                <img src='../../desarrollo/sala-vista-min.jpg' className='img-fluid' />
+              </div>
+              <div className="grid-item">
+                <img src='../../desarrollo/terraza-completa-min.jpg' className='img-fluid' />
+              </div>
+              <div className="grid-item grid-item--width2">
+                <img src='../../desarrollo/terraza-min.jpg' className='img-fluid' />
+              </div>
+              <div className="grid-item">
+                <img src='../../desarrollo/vestidor-min.jpg' className='img-fluid' />
+              </div>
+
+            </div>
+
           </div>
         </div>
       </section>
