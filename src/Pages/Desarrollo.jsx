@@ -6,21 +6,22 @@ import CarouselAmenities from '../components/CarouselAmenities/CarouselAmenities
 import TopViews from '../components/TopViews/TopViews'
 import Whatsapp from '../components/Whatsapp/Whatsapp'
 import ScrollToTop from '../components/ScrollToTop/ScrollToTop'
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import Masonry from 'masonry-layout'
 
 const Desarrollo = () => {
 
+  const gridRef = useRef(null);
+
   useEffect(() => {
-    const masonry = () => {
-      let elem = document.querySelector('.grid')
-      return new Masonry(elem, {
+    if (gridRef.current) {
+      new Masonry(gridRef.current, {
         itemSelector: '.grid-item',
-        columnWidth: 200,
-        gutter: 5,
+        columnWidth: 150,
+        percentPosition: true,
+        gutter: 5
       })
     }
-    return masonry
   }, [])
 
   return (
@@ -180,73 +181,77 @@ const Desarrollo = () => {
         </div>
       </section>
       {/* Gallery */}
-      <section id='gallery' className='gallery_section layout_padding-top bg-beige'>
+      <section id='gallery' className='gallery_section layout_padding-top bg-blue'>
+        {/* Etapa vendida */}
         <div className='container-fluid'>
-          <div className='row px-5 mb-5'>
+          <div className='row px-5 mb-5 justify-content-center'>
             <div className='col-12'>
               <div className='title'>
-                <h3 className='x-4 text-center'>
+                <h3 className='x-2 text-center'>
                   Etapa 1: 100% Vendida
                 </h3>
               </div>
             </div>
-            <div className='col-12'>
+            <div className='col-8'>
               <img src='./../../etapas.png' className='img-fluid' />
             </div>
           </div>
         </div>
         <div className='container-fluid'>
+          <div className='row align-items-center justify-content-center my-5 text-center'>
+            <h2 className='light-200 x-4 line-height-compact mb-5'>Galería<br /><span className='allison x-6 text-beige'>Conoce la casa muestra</span></h2>
+          </div>
           <div className='row align-items-center justify-content-center'>
-            {/* Masonry */}
-            <div className="grid">
-              <div className="grid-item grid-item--width2">
-                <img src='../../desarrollo/cocina-barra-min.jpg' className='img-fluid' />
+            <div className='col-12'>
+              {/* Masonry */}
+              <div className="grid" ref={gridRef}>
+                <div className="grid-item grid-item--width2">
+                  <img src='../../desarrollo/cocina-barra-min.jpg' className='img-fluid' />
+                </div>
+                <div className="grid-item grid-item--width2">
+                  <img src='../../desarrollo/bano-min.jpg' className='img-fluid' />
+                </div>
+                <div className="grid-item grid-item--width2">
+                  <img src='../../desarrollo/bano-2-min.jpg' className='img-fluid' />
+                </div>
+                <div className="grid-item grid-item--width2">
+                  <img src='../../desarrollo/cocina-vista-min.jpg' className='img-fluid' />
+                </div>
+                <div className="grid-item grid-item--width2">
+                  <img src='../../desarrollo/cuarto-lavado-min.jpg' className='img-fluid' />
+                </div>
+                <div className="grid-item grid-item--width2">
+                  <img src='../../desarrollo/fachada-min.jpg' className='img-fluid' />
+                </div>
+                <div className="grid-item grid-item--width2">
+                  <img src='../../desarrollo/recamara-2-min.jpg' className='img-fluid' />
+                </div>
+                <div className="grid-item grid-item--width2">
+                  <img src='../../desarrollo/recamara-min.jpg' className='img-fluid' />
+                </div>
+                <div className="grid-item grid-item--width2">
+                  <img src='../../desarrollo/recamara-principal-min.jpg' className='img-fluid' />
+                </div>
+                <div className="grid-item grid-item--width2">
+                  <img src='../../desarrollo/sala-min.jpg' className='img-fluid' />
+                </div>
+                <div className="grid-item grid-item--width2">
+                  <img src='../../desarrollo/sala-tv-min.jpg' className='img-fluid' />
+                </div>
+                <div className="grid-item grid-item--width2">
+                  <img src='../../desarrollo/sala-vista-min.jpg' className='img-fluid' />
+                </div>
+                <div className="grid-item grid-item--width2">
+                  <img src='../../desarrollo/terraza-completa-min.jpg' className='img-fluid' />
+                </div>
+                <div className="grid-item grid-item--width2">
+                  <img src='../../desarrollo/terraza-min.jpg' className='img-fluid' />
+                </div>
+                <div className="grid-item grid-item--width2">
+                  <img src='../../desarrollo/vestidor-min.jpg' className='img-fluid' />
+                </div>
               </div>
-              <div className="grid-item grid-item--width2">
-                <img src='../../desarrollo/bano-min.jpg' className='img-fluid' />
-              </div>
-              <div className="grid-item">
-                <img src='../../desarrollo/bano-2-min.jpg' className='img-fluid' />
-              </div>
-              <div className="grid-item">
-                <img src='../../desarrollo/cocina-vista-min.jpg' className='img-fluid' />
-              </div>
-              <div className="grid-item">
-                <img src='../../desarrollo/cuarto-lavado-min.jpg' className='img-fluid' />
-              </div>
-              <div className="grid-item">
-                <img src='../../desarrollo/fachada-min.jpg' className='img-fluid' />
-              </div>
-              <div className="grid-item">
-                <img src='../../desarrollo/recamara-2-min.jpg' className='img-fluid' />
-              </div>
-              <div className="grid-item">
-                <img src='../../desarrollo/recamara-min.jpg' className='img-fluid' />
-              </div>
-              <div className="grid-item grid-item--width2">
-                <img src='../../desarrollo/recamara-principal-min.jpg' className='img-fluid' />
-              </div>
-              <div className="grid-item grid-item--width2">
-                <img src='../../desarrollo/sala-min.jpg' className='img-fluid' />
-              </div>
-              <div className="grid-item grid-item--width2">
-                <img src='../../desarrollo/sala-tv-min.jpg' className='img-fluid' />
-              </div>
-              <div className="grid-item">
-                <img src='../../desarrollo/sala-vista-min.jpg' className='img-fluid' />
-              </div>
-              <div className="grid-item">
-                <img src='../../desarrollo/terraza-completa-min.jpg' className='img-fluid' />
-              </div>
-              <div className="grid-item grid-item--width2">
-                <img src='../../desarrollo/terraza-min.jpg' className='img-fluid' />
-              </div>
-              <div className="grid-item">
-                <img src='../../desarrollo/vestidor-min.jpg' className='img-fluid' />
-              </div>
-
             </div>
-
           </div>
         </div>
       </section>

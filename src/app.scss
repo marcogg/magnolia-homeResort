@@ -856,9 +856,14 @@ a:focus {
   }
 
 
-  &.bg-beige{
-    padding: 10% 0;
+  &.bg-blue{
+    padding: 6% 0;
     background-color: $blue;
+  }
+  
+  &.bg-beige{
+    padding: 6% 0;
+    background-color: $beige;
   }
 
   & .features{
@@ -1681,5 +1686,13 @@ margin-top: 0;
 }
 
 // Masonry
-.grid-item { width: clamp(150px, 200px, 100% ); margin-bottom: 10px; }
-.grid-item--width2 { width: clamp(300px, 400px, 100%); margin-bottom: 10px;}
+.grid-item { 
+  width: clamp(150px, 200px, 100% ); margin-bottom: 10px; 
+}
+.grid-item--width2 { 
+  width: clamp(300px, 400px, 100%); margin-bottom: 10px;
+}
+
+.grid-sizer {
+  width: 200px;
+}
