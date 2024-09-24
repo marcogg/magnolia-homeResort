@@ -56,7 +56,7 @@ const Ubicacion = () => {
                 onReady={(form) => console.log(`Form ready: ${form}`)}
                 loading={<div>Cargando...</div>}
               />
-              <div className='patch-hubspot' />
+              {/* <div className='patch-hubspot' /> */}
             </div>
           </div>
         </div>

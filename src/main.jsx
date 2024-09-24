@@ -32,7 +32,8 @@ const router = createBrowserRouter(
     },
     {
       path: '/gracias-por-contactarnos',
-      element: <Gracias />
+      element: <Gracias />,
+      errorElement: <Gracias />
     },
     {
       path: '*',

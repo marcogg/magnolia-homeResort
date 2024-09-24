@@ -146,7 +146,7 @@ const Intro = () => {
                   onReady={(form) => console.log(`Form ready: ${form}`)}
                   loading={<div>Cargando...</div>}
                 />
-                <div className='patch-hubspot-light' />
+                {/* <div className='patch-hubspot-light' /> */}
                 {/* <Link className='cta negative' to='/contacto'>Solicitar cotización</Link> */}
               </div>
             </div>
