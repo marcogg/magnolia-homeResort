@@ -15,7 +15,7 @@ const Intro = () => {
                 <p>Un <b>proyecto residencial en Lomas de Angelópolis, Puebla</b>. Este gran desarrollo planeado está lleno de modernas instalaciones públicas, centros comerciales, escuelas, espacios deportivos y más opciones para cubrir todas las necesidades de sus usuarios.</p>
               </div>
               <div className='col-md-7 col-12'>
-                <img src='/punta-cascatta.jpg' className='img-fluid' />
+                <img src='/garden-houses-punta-cascatta.jpg' className='img-fluid' />
               </div>
             </div>
           </div>
@@ -44,7 +44,7 @@ const Intro = () => {
                 <div className='detail-box'>
                   <div className='heading_container'>
                     <h2>
-                      Vive cada día como si fueran vacaciones
+                      Vive cada día como si estuvieras de vacaciones
                     </h2>
                     <p>
                       Lomas de Angelópolis es un proyecto urbanístico de clase mundial, ubicado en la ciudad de Puebla, sobresale por su arquitectura innovadora, excelente diseño vial y su modernidad, cuanta con equipamientos y servicios como:
@@ -130,7 +130,7 @@ const Intro = () => {
           <div className='container form-cta'>
             <div className='row align-items-center'>
               <div className='col-lg-8 py-5'>
-                <img src='./fachada_magnolia.jpg' className='img-fluid mb-5' />                <h2 className='light-200 x-4 line-height-compact'>Cotiza tu nueva<br /><span className='allison x-10 text-beige'>inversión inmobiliaria</span></h2>
+                <img src='./casas-puebla-terraza.jpg' className='img-fluid mb-5' />                <h2 className='light-200 x-4 line-height-compact'>Cotiza tu nueva<br /><span className='allison x-10 text-beige'>inversión inmobiliaria</span></h2>
                 {/* <h3 className='mt-5 light-300'>Casas en Pue</h3> */}
                 <Link className='btn-cta' to='https://api.whatsapp.com/send?phone=522221209242&text=%C2%A1Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20del%20desarrollo%20de%20Magnolia'>
                   Haz una cita
@@ -165,7 +165,7 @@ const Intro = () => {
                           <h1>Magnolia <br />
                             <span className='light-300'>Home Resort</span>
                           </h1>
-                          <p>9 Exclusivas residencias con concepto House Garden.<br /><span className='x-2 text-blue'>Desde $7.5 MDP</span></p>
+                          <p>9 Exclusivas residencias con concepto House Garden.<br /><span className='x-2 text-blue'>Desde $7.6 MDP</span></p>
                           <div>
                             <Link to='/desarrollo'>
                               Conoce las casas
@@ -195,7 +195,7 @@ const Intro = () => {
                 </div>
               </div>
               <div className='col-12 col-lg-6'>
-                <img className='img-fluid' src='../casas-de-lujo-puebla.jpg' />
+                <img className='img-fluid' src='../casas-lujo-puebla-angelopolis.jpg' />
                 <div />
               </div>
             </div>
@@ -232,12 +232,12 @@ const Intro = () => {
               <div className='gallery_box'>
                 <div className='box b1'>
                   <div className='img-box'>
-                    <img src='../FACHADA-02_T.jpg' />
+                    <img src='../casas-terraza-privada-puebla.jpg' />
                   </div>
                 </div>
                 <div className='box b2'>
                   <div className='img-box'>
-                    <img src='../FACHADA-04.jpg' />
+                    <img src='../venta-garden-houses-puebla.jpg' />
                   </div>
                   <div className='img-box'>
                     <img src='../ANDADOR.jpg' />
@@ -253,7 +253,7 @@ const Intro = () => {
                 </div>
                 <div className='box b4'>
                   <div className='img-box'>
-                    <img src='../casas-lomas-angelopolis.jpg' />
+                    <img src='../casas-cocina-integral-lomas-angelopolis.jpg' />
                   </div>
                 </div>
               </div>

@@ -7,6 +7,7 @@ import './app.scss'
 import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom'
 import Gracias from './Pages/Gracias.jsx'
 import Ubicacion from './Pages/Ubicacion.jsx'
+import TagManager from "react-gtm-module";
 
 const router = createBrowserRouter(
   [
@@ -41,6 +42,10 @@ const router = createBrowserRouter(
     }
   ]
 )
+const tagManagerArgs = {
+  gtmId: 'AW-11304306395'
+};
+TagManager.initialize(tagManagerArgs);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 

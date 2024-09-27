@@ -7,7 +7,8 @@ import TopViews from '../components/TopViews/TopViews'
 import Whatsapp from '../components/Whatsapp/Whatsapp'
 import ScrollToTop from '../components/ScrollToTop/ScrollToTop'
 import { useEffect, useRef } from 'react'
-import Masonry from 'masonry-layout'
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
+
 
 const Desarrollo = () => {
 
@@ -204,53 +205,57 @@ const Desarrollo = () => {
           <div className='row align-items-center justify-content-center'>
             <div className='col-12'>
               {/* Masonry */}
-              <div className="grid" ref={gridRef}>
-                <div className="grid-item grid-item--width2">
-                  <img src='../../desarrollo/cocina-barra-min.jpg' className='img-fluid' />
-                </div>
-                <div className="grid-item grid-item--width2">
-                  <img src='../../desarrollo/bano-min.jpg' className='img-fluid' />
-                </div>
-                <div className="grid-item grid-item--width2">
-                  <img src='../../desarrollo/bano-2-min.jpg' className='img-fluid' />
-                </div>
-                <div className="grid-item grid-item--width2">
-                  <img src='../../desarrollo/cocina-vista-min.jpg' className='img-fluid' />
-                </div>
-                <div className="grid-item grid-item--width2">
-                  <img src='../../desarrollo/cuarto-lavado-min.jpg' className='img-fluid' />
-                </div>
-                <div className="grid-item grid-item--width2">
-                  <img src='../../desarrollo/fachada-min.jpg' className='img-fluid' />
-                </div>
-                <div className="grid-item grid-item--width2">
-                  <img src='../../desarrollo/recamara-2-min.jpg' className='img-fluid' />
-                </div>
-                <div className="grid-item grid-item--width2">
-                  <img src='../../desarrollo/recamara-min.jpg' className='img-fluid' />
-                </div>
-                <div className="grid-item grid-item--width2">
-                  <img src='../../desarrollo/recamara-principal-min.jpg' className='img-fluid' />
-                </div>
-                <div className="grid-item grid-item--width2">
-                  <img src='../../desarrollo/sala-min.jpg' className='img-fluid' />
-                </div>
-                <div className="grid-item grid-item--width2">
-                  <img src='../../desarrollo/sala-tv-min.jpg' className='img-fluid' />
-                </div>
-                <div className="grid-item grid-item--width2">
-                  <img src='../../desarrollo/sala-vista-min.jpg' className='img-fluid' />
-                </div>
-                <div className="grid-item grid-item--width2">
-                  <img src='../../desarrollo/terraza-completa-min.jpg' className='img-fluid' />
-                </div>
-                <div className="grid-item grid-item--width2">
-                  <img src='../../desarrollo/terraza-min.jpg' className='img-fluid' />
-                </div>
-                <div className="grid-item grid-item--width2">
-                  <img src='../../desarrollo/vestidor-min.jpg' className='img-fluid' />
-                </div>
-              </div>
+              <ResponsiveMasonry
+                columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
+              >
+                <Masonry columnsCount={3} gutter='15px'>
+                  <div>
+                    <img src='../../desarrollo/cocina-barra-min.jpg' className='img-fluid' />
+                  </div>
+                  <div>
+                    <img src='../../desarrollo/bano-min.jpg' className='img-fluid' />
+                  </div>
+                  <div>
+                    <img src='../../desarrollo/bano-2-min.jpg' className='img-fluid' />
+                  </div>
+                  <div>
+                    <img src='../../desarrollo/cocina-vista-min.jpg' className='img-fluid' />
+                  </div>
+                  <div>
+                    <img src='../../desarrollo/cuarto-lavado-min.jpg' className='img-fluid' />
+                  </div>
+                  <div>
+                    <img src='../../desarrollo/fachada-min.jpg' className='img-fluid' />
+                  </div>
+                  <div>
+                    <img src='../../desarrollo/recamara-2-min.jpg' className='img-fluid' />
+                  </div>
+                  <div>
+                    <img src='../../desarrollo/recamara-min.jpg' className='img-fluid' />
+                  </div>
+                  <div>
+                    <img src='../../desarrollo/recamara-principal-min.jpg' className='img-fluid' />
+                  </div>
+                  <div>
+                    <img src='../../desarrollo/sala-min.jpg' className='img-fluid' />
+                  </div>
+                  <div>
+                    <img src='../../desarrollo/sala-tv-min.jpg' className='img-fluid' />
+                  </div>
+                  <div>
+                    <img src='../../desarrollo/sala-vista-min.jpg' className='img-fluid' />
+                  </div>
+                  <div>
+                    <img src='../../desarrollo/terraza-completa-min.jpg' className='img-fluid' />
+                  </div>
+                  <div>
+                    <img src='../../desarrollo/terraza-min.jpg' className='img-fluid' />
+                  </div>
+                  <div>
+                    <img src='../../desarrollo/vestidor-min.jpg' className='img-fluid' />
+                  </div>
+                </Masonry>
+              </ResponsiveMasonry>
             </div>
           </div>
         </div>
